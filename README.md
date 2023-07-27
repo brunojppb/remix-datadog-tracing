@@ -1,9 +1,10 @@
 # Remix Express Starter
 
-This repo is a Remix project that reproduces an issue with the
-[dd-trace](https://github.com/DataDog/dd-trace-js) library version **4.8.1**
-where routes handled by Remix using Express in a catch-all route handler are
-generating resources named with `GET` only in the APM UI.
+This repo is a Remix project that reproduces an issue
+([originally reported here](https://github.com/DataDog/dd-trace-js/issues/3283#issuecomment-1653821725))
+with the [dd-trace](https://github.com/DataDog/dd-trace-js) library version
+**4.8.1** where routes handled by Remix using Express in a catch-all route
+handler are generating resources named with `GET` only in the APM UI.
 
 https://github.com/brunojppb/remix-datadog-tracing/blob/8a0f09a3f72d2c9d2f12edf2029acad689fe8b0e/server/prod.ts#L7-L13
 
