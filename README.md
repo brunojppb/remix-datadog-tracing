@@ -7,10 +7,6 @@ generating resources named with `GET` only in the APM UI.
 
 https://github.com/brunojppb/remix-datadog-tracing/blob/8a0f09a3f72d2c9d2f12edf2029acad689fe8b0e/server/prod.ts#L7-L13
 
-Here is how the Datadog UI looks like:
-
-![DD UI](./apm_ui.jpg)
-
 ## How to reproduce the issue
 
 First install all dependencies with:
@@ -37,6 +33,13 @@ NODE_ENV=production \
   node --require dd-trace/init ./build/index.js
 
 ```
+
+Now visit [http://localhost:3000/demo](http://localhost:3000/demo)
+
+It should trigger a tracing event. If you go to the Datadog UI, you should see
+this:
+
+![DD UI](./apm_ui.jpg)
 
 ## Docker
 
