@@ -33,7 +33,7 @@ RUN npm install --omit=dev
 USER nobody
 
 ENV DD_TRACE_ENABLED=true \
-    DD_TRACE_ENABLED=true \
+    DD_TRACE_DEBUG=true \
     DD_SERVICE=remix-demo
 
 # Start from the Remix build which already includes our Express server
