@@ -1,3 +1,7 @@
+> [!TIP]
+> I've released a small package to help improve your Remix traces with Datadog.  
+> Have a look at [remix-datadog-express-tracing in npm](https://www.npmjs.com/package/remix-datadog-express-tracing).
+
 # Remix Express Starter
 
 This repo is a Remix project that reproduces an issue
