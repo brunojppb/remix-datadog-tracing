@@ -2,7 +2,7 @@
 > I've released a small package to help improve your Remix traces with Datadog.  
 > Have a look at [remix-datadog-express-tracing in npm](https://www.npmjs.com/package/remix-datadog-express-tracing).
 
-# Remix Express Starter
+# Remix and Datadog app to showcase the current limitations
 
 This repo is a Remix project that reproduces an issue
 ([originally reported here](https://github.com/DataDog/dd-trace-js/issues/3283#issuecomment-1653821725))
@@ -11,6 +11,8 @@ with the [dd-trace](https://github.com/DataDog/dd-trace-js) library version
 handler are generating resources named with `GET` only in the APM UI.
 
 https://github.com/brunojppb/remix-datadog-tracing/blob/8a0f09a3f72d2c9d2f12edf2029acad689fe8b0e/server/prod.ts#L7-L13
+
+To resolve this issue for now, use my package: [remix-datadog-express-tracing in npm](https://www.npmjs.com/package/remix-datadog-express-tracing).
 
 ## How to reproduce the issue
 
